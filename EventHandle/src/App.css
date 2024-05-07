@@ -1,0 +1,60 @@
+body{
+  background-color: white;
+  color: black;
+}
+.container{
+  margin-left: 400px;
+}
+.Main{
+  display: flex;
+  font-weight: 500;
+  column-gap: 30px;
+}
+.Main div{
+  padding: 20px;
+  animation: border 2s infinite ease-in-out;
+  border-radius:20px;
+  height: 250px;
+  width: 150px;
+}
+.Main div:hover{
+  transform: scale(1.25);
+}
+@keyframes border{
+  0%{
+    border: 5px solid white;
+  }
+  25%{
+    border: 5px solid black;
+  }
+  50%{
+    border: 5px solid white;
+  }
+  100%{
+    border: 5px solid black;
+  }
+}
+.image{
+  border-radius: 5px;
+  height: 150px;
+  width: 100%;
+}
+/* .image:hover{
+  border-radius: 20px;
+  transform: scale(1.25);
+  transition-duration: 0.5s;
+} */
+
+.usercard{
+  border: 2px solid black;
+  padding: 20px;
+  font-weight: 500;
+  font-family:cursive;
+  border-radius: 10px;
+}
+.usercard:hover{
+  background-color: black;
+  color: white;
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+}
